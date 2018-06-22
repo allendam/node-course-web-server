@@ -36,14 +36,14 @@ hbs.registerHelper('screamIt', (text) => {
 });
 
 app.get('/', (req, res) => {
-    res.render('home.hbs', {
+    res.render('Home.hbs', {
        pageTitle: 'Home Page',
         productInfo: 'The greatest product ever! buy here.'
     });
 });
 
 app.get('/about', (req, res) => {
-   res.render('about.hbs', {
+   res.render('About.hbs', {
        pageTitle: 'About Page',
    });
 });
