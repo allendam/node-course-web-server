@@ -48,6 +48,12 @@ app.get('/about', (req, res) => {
    });
 });
 
+app.get('/package', (req, res) => {
+    res.render('Package.hbs', {
+        pageTitle: 'Package Page',
+    });
+});
+
 app.get('/bad', (req, res) => {
     res.send({
         errorMessage: 'Error locating page'
